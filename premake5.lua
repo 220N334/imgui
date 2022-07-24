@@ -30,7 +30,12 @@ project "ImGui"
 		systemversion "latest"
 		cppdialect "C++17"
 		staticruntime "On"
+        architecture "ARM"
 
 	filter "configurations:Debug"
 		runtime "Debug"
 		symbols "on"
+
+    filter "configurations:Release"
+        runtime "Release"
+        optimize "On"
