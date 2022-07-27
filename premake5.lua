@@ -12,6 +12,7 @@ project "ImGui"
 		"imgui.cpp",
 		"imgui_draw.cpp",
 		"imgui_internal.h",
+		"imgui_tables.cpp",
 		"imgui_widgets.cpp",
 		"imstb_rectpack.h",
 		"imstb_textedit.h",
@@ -29,12 +30,11 @@ project "ImGui"
 		systemversion "latest"
 		cppdialect "C++17"
 		staticruntime "On"
-        architecture "ARM"
 
 	filter "configurations:Debug"
 		runtime "Debug"
 		symbols "on"
-		
-	filter "configurations:Release"
-		runtime "Release"
-		optimize "on"
+
+    filter "configurations:Release"
+        runtime "Release"
+        optimize "On"
